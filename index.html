@@ -10,6 +10,7 @@
 
 <body>
     <div id="dpi" style="background-color: red; height: 1in; width: 1in; left: 100%; top: 100%;"></div>
+    <div id='screen'></div>
 
     <div id='info'></div>
     <script>
@@ -22,6 +23,9 @@
         var height = screen.height / dpi_y;
         var info = document.getElementById('info');
         info.innerText = ` dpi_x ${dpi_x} dpi_y ${dpi_y} width ${width} height ${height} diagonal ${Math.sqrt(width * width + height * height)}`
+
+        var screen1 = document.getElementById('screen');
+        screen1.innerText = `width: ${screen.width}px \n height: ${screen.height}px \n  devicePixelRatio: ${devicePixelRatio}\n\n`
     </script>
 </body>
 
