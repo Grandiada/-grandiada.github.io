@@ -1,20 +1,119 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./assets/js/app.js"></script>
-    <title>Test</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planeta Nostra — Human Resistance Organization</title>
+  <meta name="description" content="KICK THE ASSES OF THESE DAMNED CHTONIANS, WHO ARE  HIDING OUT AND SECRETLY KILLING US ON THE STREETS OF OUR CITIES">
+  <link rel="stylesheet" type="text/css" href="assets/css/app.min.css">
+
+  <!--  og:image-->
+  <meta property="og:image" content="/assets/img/preview.png">
+  <meta property="og:type" content="website"/>
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="300">
+  <meta property="og:image:height" content="300">
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="/assets/img/preview.png"/>
+
+  <link rel="icon" href="/assets/img/favicon.png">
 </head>
+<body >
 
-<body>
-    <div>
-        <button id="play"  class="preloader__play" onclick="playClick()">play intro</button>
-        <canvas id="canvas" class="video__canvas">Sorry video is npt supported</canvas>
-        <video class="video__item" playsinline>
-        </video>
+<div class="preloader">
+  <div class="preloader__title">
+    <span>reality?</span> <span class="preloader__answer">Yes</span>
+    <button id="play" disabled class="preloader__play" onclick="playClick()">play intro</button>
+  </div>
+</div>
+
+<video id="glitch" playsinline muted>
+  <source src="./assets/video/1992_glitch.mp4" type="video/mp4;">
+</video>
+
+<div class="site">
+  
+
+  
+
+<div class="video">
+  <span class="video__skip btn">skip intro</span>
+  <canvas id="canvas" class="video__canvas">Sorry video is npt supported</canvas>
+  <video class="video__item" playsinline>
+  </video>
+</div>
+
+<div class="home">
+  <video class="home__hover" muted playsinline>
+    <source src="./assets/video/video-hover.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+  </video>
+
+  <div class="home__logo">
+    <a href="/"><img class="home__logo-img" src="./assets/img/logo.png" alt=""></a>
+    <p class="home__logo-descriptor">human Resistance Organization</p>
+  </div>
+
+  <div class="home__text">
+    <p>
+      <b>KICK THE ASSES</b> OF THESE <br> DAMNED CHTONIANS, WHO ARE <br> HIDING OUT AND SECRETLY <b>KILLING <br>
+      US</b> ON THE STREETS OF OUR CITIES!
+    </p>
+  </div>
+
+  <div class="modal">
+    <span class="modal__close"><img src="./assets/img/close.svg" alt=""></span>
+    <form id="form" class="modal__form">
+      <h2 class="modal__title">Join the ranks of <br> the PLANETA NOSTRA</h2>
+
+      <div class="modal__label">
+        <input type="text" hidden name="project_name" value="Planeta Nostra">
+        <input type="text" hidden name="admin_email" value="info@planetanostra.com">
+        <input type="text" hidden name="form_subject" value="Subscribe Planeta Nostra">
+        <input class="modal__label-input" name="email" type="email" placeholder="newuser@gmail.com" required>
+        <button class="modal__label-btn btn">subscribe</button>
+      </div>
+
+    </form>
+    <div class="modal__social">
+      <a href="https://discord.gg/planetanostra" target="_blank"><img src="./assets/img/discord.svg" alt=""></a>
+      <a href="https://twitter.com/planeta_nostra" target="_blank"><img src="./assets/img/twitter.svg" alt=""></a>
+      <a href="https://www.facebook.com/planetanostra" target="_blank"><img src="./assets/img/facebook.svg" alt=""></a>
     </div>
-</body>
+  </div>
 
+  <div class="home-btn">
+    <div class="home-btn__item">
+      <p class="home-btn__item-title">Visit the Resistance <br> Training Center</p>
+      <a href="#" class="btn lock">get started</a>
+    </div>
+    <div class="home-btn__item">
+      <p class="home-btn__item-title">Join the ranks of <br> the PLANETA NOSTRA</p>
+      <a href="#" class="btn" id="subscribe">get started</a>
+    </div>
+    <div class="home-btn__item">
+      <p class="home-btn__item-title">Pre-registration for <br> NFT XR equipment</p>
+      <a href="#" class="btn lock">get started</a>
+    </div>
+  </div>
+
+  <div class="home-footer">
+    <p>
+      Powered by <span>Spheroid Universe</span> <br>© Spheroid Universe 2021
+    </p>
+  </div>
+</div>
+
+
+
+
+  
+
+</div>
+
+<div id="progress"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="assets/js/app.min.js"></script>
+</body>
 </html>
